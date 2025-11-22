@@ -1,30 +1,92 @@
+# IDE
 .idea
+.vscode/
+*.iml
+
+# Python缓存
 ./__pycache__/
 */__pycache__/
 */*/__pycache__/
 */*/*/__pycache__/
+*.pyc
+*.py[cod]
+*$py.class
+*.so
+
+# 系统文件
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Python虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# PowerShell脚本
+# *.ps1
+
+# Markdown文档
+# *.md
+
+# Excel文件
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.csv
+
+# 音频文件
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.pcm
+
+# 日志文件
+*.log
+*.txt
+log/
+logs/
+
+# 模型和数据
 init_model/
 *.tar.gz
-test_local/
-RapidASR
 export/*
-*.pyc
+modelscope
+modelscope_models
+examples/aishell/llm_asr_nar/*
+outputs*
+emotion2vec*
+GPT-SoVITS*
+data/Audio/
+exp_svs/
+exp_svs_onnx/
+models/
+
+# Python构建
 .eggs
-MaaS-lib
-.gitignore
 .egg*
+*egg-info
 dist
 build
 funasr.egg-info
 docs/_build
-modelscope
+
+# 临时和测试
+test_local/
 samples
 .ipynb_checkpoints
-outputs*
-emotion2vec*
-GPT-SoVITS*
-modelscope_models
-examples/aishell/llm_asr_nar/*
-*egg-info
-env/
+RapidASR
+MaaS-lib
+
+# 模型文件(可选)
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# 数据文件
+*.jsonl
